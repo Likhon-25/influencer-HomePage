@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3A3A3A;
+    --secondary-color: #E02C6D;
+}
+
+/* * Shared Item */
+.display-flex {
+    display: flex;
+}
+
+.justify-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px 24px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 41px;
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/** nav section style */
+header {
+    /* max-width: 1200px;
+    margin: 0 auto; */
+}
+
+nav {
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    gap: 1.9rem;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/** banner section style start */
+.banner {
+    margin-top: 50px;
+    gap: 133px;
+}
+
+.banner-content {
+    max-width: 582px;
+}
+
+.banner-content h1 {
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.banner-content p {
+    max-width: 505px;
+    font-size: 16px;
+    columns: var(--primary-color);
+    margin-top: 16px;
+}
+
+
+.banner>.banner-image {
+    max-width: 440px;
+    background: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* * brand section style start */
+.brand-section {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.brand-container {
+    margin-top: 65px;
+    padding: 35px 60px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/** Product section style */
+.product {
+    max-width: 1040px;
+    margin: 100px auto 0 auto;
+}
+
+.product-section-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-container .product-card {
+    max-width: 329px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-card .product-image {
+    max-width: 300px;
+    max-height: 256px;
+}
+
+.product-card .Product-name {
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
+
+.product-card .price {
+    font-size: 24px;
+    color: #000000;
+}
+
+.product-card .product-about {
+    max-width: 196px;
+    font-size: 14px;
+    /* font-weight: 900; */
+    color: #787885;
+}
+
+/* * Produc Place Section style start */
+
+.product-place {
+    max-width: 1110px;
+    margin: 100px auto 0 auto;
+}
+
+.product-place-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product-place-container h2 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #0A0826;
+}
+
+.product-place-container p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6C6C6C;
+}
+
+/* *footer section start */
+footer{
+    background-color: #0A0826;
+    padding: 50px ;
+}
+.footer-container{
+    max-width: 262px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.footer-container h2{
+    font-size: 24px;
+    color: #ffffff;
+}
+.footer-container h6{
+    font-size: 14px;
+    color: #ffffff;
+}
+.footer-container p{
+    font-size: 14px;
+    color: #ffff;
+}
+
+/*?? responsive section */
+@media screen and (max-width:576px) {
+
+    nav,
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner>img {
+        /* !! Problem aikana image k 100% delao responsive thik hossa na */
+        width: 90%;
+        /* max-width: 300px; */
+    }
+
+    .brand-container {
+        grid-template-columns: repeat(4, 1fr);
+        /* margin-right: 0px; */
+
+        gap: 30px;
+        /* ! akana kisu problem asa*/
+        justify-self: center;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    .product-place-container {
+        grid-template-columns: 1fr;
+    }
+    .product-place-container{
+        text-align: center;
+    }
+}
