@@ -191,6 +191,7 @@ nav {
 footer{
     background-color: #0A0826;
     padding: 50px ;
+    margin-top: 100px;
 }
 .footer-container{
     max-width: 262px;
@@ -201,10 +202,12 @@ footer{
 .footer-container h2{
     font-size: 24px;
     color: #ffffff;
+    margin-bottom: 5px;
 }
 .footer-container h6{
     font-size: 14px;
     color: #ffffff;
+    margin-bottom: 5px;
 }
 .footer-container p{
     font-size: 14px;
